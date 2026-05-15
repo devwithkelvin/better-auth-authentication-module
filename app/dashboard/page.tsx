@@ -1,7 +1,7 @@
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-
+//import SignOutButton from "../components/signoutbutton";
 export default async function DashboardPage() {
   const session = await auth.api.getSession({
     headers: await headers(),
@@ -23,7 +23,7 @@ export default async function DashboardPage() {
         />
       )}
       <p className="text-sm text-gray-400">{session.user.email}</p>
-
+      {/* <SignOutButton /> */}
     </div>
   );
 }
