@@ -1,6 +1,6 @@
 "use client";
 
-import { signIn } from "@/lib/auth-client";
+import { signIn } from "@/lib/auth-client";//getting signin from auth-client
 
 export default function SignInPage() {
   const handleGoogleSignIn = async () => {
